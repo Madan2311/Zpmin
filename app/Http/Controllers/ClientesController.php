@@ -17,7 +17,7 @@ class ClientesController extends Controller
     public function index()
     {
         $cliente = Cliente::all();
-        return view("Form.Clientes.Fclientes",['cliente'=>$cliente]);
+        return view("Clientes.Fclientes",['cliente'=>$cliente]);
     }
 
     /**
@@ -27,7 +27,7 @@ class ClientesController extends Controller
      */
     public function create()
     {
-        return view(Form.Clientes.clienteAgregar);
+        return view(Clientes.clienteAgregar);
     }
 
     /**
@@ -54,7 +54,7 @@ class ClientesController extends Controller
                 $message = "No se puede registrar el usuario";
                 $status = "alert-danger";
             }
-            return redirect('/Clientes')->with('status', $status)->with('message', $message);
+            return redirect('/Fclientes')->with('status', $status)->with('message', $message);
         }catch (Exception $e) {
             return "fatal error - ".$e->getMessage();
         }

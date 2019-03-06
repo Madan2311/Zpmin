@@ -32,7 +32,7 @@
           <i class="fa fa-address-book"></i>
           <span>Clientes</span></a>
       </li>
-      
+
       <!-- Divider -->
       <hr class="sidebar-divider">
 
@@ -52,10 +52,10 @@
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Forma de pago</span></a>
       </li>
-      
+
       <!-- Divider -->
       <hr class="sidebar-divider">
-      
+
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
@@ -116,7 +116,7 @@
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                
+
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Profile
@@ -146,12 +146,12 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-          @include('Form.Clientes.FormClientes')
-         
+          @include('Clientes.FormClientes')
+
 
         </div>
         <!-- /.container-fluid -->
-        
+
       </div>
       <!-- End of Main Content -->
 

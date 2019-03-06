@@ -48,3 +48,5 @@
 //     return view('Form.Talla.Ftalla');
 // });
 Route::get('/','ClientesController@index');
+Route::resource('Fclientes', 'ClientesController');
+

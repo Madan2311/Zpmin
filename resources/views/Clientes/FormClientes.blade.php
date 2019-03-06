@@ -32,6 +32,7 @@
                     <td>{{ $item->total_pagar }}</td>
 
                     <td>
+
                         <button class="btn btn-warning" data-toggle="modal" data-target="#ModalEditar"><i class="fas fa-user-edit"></i>
                         </button>
                     </td>
@@ -45,6 +46,6 @@
 	</div>
 </div>
 <!-- Modal agregar -->
-   @include('Form.Clientes.clienteAgregar')
-<!-- Modal agregar -->
-    @include('Form.Clientes.clienteEditar')
+   @include('Clientes.clienteAgregar')
+<!-- Modal editar -->
+    @include('Clientes.clienteEditar')
