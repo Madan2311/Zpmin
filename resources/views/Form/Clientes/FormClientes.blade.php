@@ -9,7 +9,7 @@
             <br>
             <br>
 			<thead class="p-3 mb-2 bg-secondary text-white">
-				<td>Nombre</td>
+				<td>Nombres</td>
 				<td>Apellido</td>
 				<td>Email</td>
 				<td>Telefono</td>
