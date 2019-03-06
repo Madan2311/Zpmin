@@ -2,21 +2,21 @@
 	<div class="col-sm-12">
 	<h2 class="text-info">Talla</h2>
 		<table class="table table-hover table-condensed table-bordered">
-			<button class="btn btn-primary" data-toggle="modal" data-target="#ModalAgregar">
-            Agregar nuevo 
+			<button class="btn btn-outline-success" data-toggle="modal" data-target="#ModalAgregar">
+            Agregar nuevo
 				<span class="fa fa-plus"></span>
 			</button>
             <br>
             <br>
-			<tr>
+			<thead class="p-3 mb-2 bg-secondary text-white">
 				<td>Nombre</td>
 				<td>Apellido</td>
 				<td>Email</td>
 				<td>Telefono</td>
 				<td>Editar</td>
 				<td>Eliminar</td>
-			</tr>
-			<tr>
+			</>
+			<thead>
 				<td></td>
 				<td></td>
 				<td></td>

@@ -8,7 +8,7 @@
 			</button>
             <br>
             <br>
-			<tr>
+			<thead class="p-3 mb-2 bg-secondary text-white">
 				<td>Nro_Pedido</td>
 				<td>Cod_Cliente</td>
 				<td>Cod_Pago</td>
@@ -16,7 +16,7 @@
 				<td>Fecha_tentativa</td>
 				<td>Editar</td>
 				<td>Eliminar</td>
-			</tr>
+			</thead>
 			<tr>
 				<td></td>
 				<td></td>
