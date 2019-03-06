@@ -43,18 +43,12 @@
         </button>
       </div>
       <div class="modal-body">
-			<label class="text-info">Forma de pago</label>
-			<input type="text" name="" id="nombre" class="form-control input-sm">
-			<label class="text-info">Apellido</label>
-			<input type="text" name="" id="apellido" class="form-control input-sm">
-			<label class="text-info">Email</label>
-			<input type="text" name="" id="email" class="form-control input-sm">
-			<label class="text-info">telefono</label>
-			<input type="text" name="" id="telefono" class="form-control input-sm">
+        <label class="text-info">Color</label>
+        <input type="text" name="" id="color" class="form-control input-sm">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -70,18 +64,13 @@
         </button>
       </div>
       <div class="modal-body">
-	  <label class="text-info">Nombre</label>
-			<input type="text" name="" id="nombre" class="form-control input-sm">
-			<label class="text-info">Apellido</label>
-			<input type="text" name="" id="apellido" class="form-control input-sm">
-			<label class="text-info">Email</label>
-			<input type="text" name="" id="email" class="form-control input-sm">
-			<label class="text-info">telefono</label>
-			<input type="text" name="" id="telefono" class="form-control input-sm">
+        <label class="text-info">Color</label>
+        <input type="text" name="" id="color" class="form-control input-sm">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
       </div>
     </div>
   </div>

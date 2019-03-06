@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-sm-12">
+	<div class="col-sm-11">
 	<h2 class="text-info">Talla</h2>
 		<table class="table table-hover table-condensed table-bordered">
 			<button class="btn btn-outline-success" data-toggle="modal" data-target="#ModalAgregar">
@@ -9,18 +9,12 @@
             <br>
             <br>
 			<thead class="p-3 mb-2 bg-secondary text-white">
-				<td>Nombre</td>
-				<td>Apellido</td>
-				<td>Email</td>
-				<td>Telefono</td>
-				<td>Editar</td>
-				<td>Eliminar</td>
-			</>
+                <td>Talla</td>
+                <td>Editar</td>
+                <td>Eliminar</td>
+			</thead>
 			<thead>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+                <td></td>
 				<td>
 					<button class="btn btn-warning" data-toggle="modal" data-target="#ModalEditar"><i class="fas fa-user-edit"></i>
 					</button>
@@ -43,18 +37,12 @@
         </button>
       </div>
       <div class="modal-body">
-			<label class="text-info">Forma de pago</label>
-			<input type="text" name="" id="nombre" class="form-control input-sm">
-			<label class="text-info">Apellido</label>
-			<input type="text" name="" id="apellido" class="form-control input-sm">
-			<label class="text-info">Email</label>
-			<input type="text" name="" id="email" class="form-control input-sm">
-			<label class="text-info">telefono</label>
-			<input type="text" name="" id="telefono" class="form-control input-sm">
+			<label class="text-info">Talla pago</label>
+			<input type="text" name="" id="talla" class="form-control input-sm">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -70,18 +58,12 @@
         </button>
       </div>
       <div class="modal-body">
-	  <label class="text-info">Nombre</label>
-			<input type="text" name="" id="nombre" class="form-control input-sm">
-			<label class="text-info">Apellido</label>
-			<input type="text" name="" id="apellido" class="form-control input-sm">
-			<label class="text-info">Email</label>
-			<input type="text" name="" id="email" class="form-control input-sm">
-			<label class="text-info">telefono</label>
-			<input type="text" name="" id="telefono" class="form-control input-sm">
+        <label class="text-info">Talla pago</label>
+		<input type="text" name="" id="talla" class="form-control input-sm">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
