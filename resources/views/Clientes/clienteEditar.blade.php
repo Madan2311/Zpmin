@@ -14,15 +14,15 @@
             <div class="modal-body">
                     <input type="text" name="id" style="visibility:hidden">
                     <label class="text-info">Identificación</label>
-                    <input type="text" name="" id="identificacion" value="{{ $Fcliente->identificacion }}" class="form-control input-sm"  disabled="true">
+                    <input type="text" name="" id="identificacion" value="{{ $item->identificacion }}" class="form-control input-sm"  disabled="true">
                     <label class="text-info">Razon Social</label>
-                    <input type="text" name="" id="razon_social" value="{{ $Fcliente->razon_social }}" class="form-control input-sm">
+                    <input type="text" name="" id="razon_social" value="{{ $item->razon_social }}" class="form-control input-sm">
                     <label class="text-info">Email</label>
-                    <input type="text" name="" id="email" value="{{ $Fcliente->email }}" class="form-control input-sm">
+                    <input type="text" name="" id="email" value="{{ $item->email }}" class="form-control input-sm">
                     <label class="text-info">telefono</label>
-                    <input type="text" name="" id="telefono" value="{{ $Fcliente->telefono }}" class="form-control input-sm">
+                    <input type="text" name="" id="telefono" value="{{ $item->telefono }}" class="form-control input-sm">
                     <label class="text-info">Total a pagar</label>
-                    <input type="text" name="" id="total_pagar" value="{{ $Fcliente->total_pagar }}" class="form-control input-sm">
+                    <input type="text" name="" id="total_pagar" value="{{ $item->total_pagar }}" class="form-control input-sm">
             </div>
             <div class="modal-footer">
               <button type="submit" name="send" class="btn btn-primary">Actualizar</button>
