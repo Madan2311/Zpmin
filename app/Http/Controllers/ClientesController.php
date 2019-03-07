@@ -16,8 +16,8 @@ class ClientesController extends Controller
      */
     public function index()
     {
-        $cliente = Cliente::all();
-        return view("Clientes.Fclientes",['cliente'=>$cliente]);
+        $Fcliente = Cliente::all();
+        return view("Clientes.Fclientes",['cliente'=>$Fcliente]);
     }
 
     /**
@@ -40,14 +40,14 @@ class ClientesController extends Controller
     {
         try
         {
-            $cliente = new Cliente;
-            $cliente->identificacion = $request->identificacion;
-            $cliente->razon_social = $request->razon_social;
-            $cliente->email = $request->email;
-            $cliente->telefono = $request->telefono;
-            $cliente->total_pagar = $request->total_pagar;
+            $Fcliente = new Cliente;
+            $Fcliente->identificacion = $request->identificacion;
+            $Fcliente->razon_social = $request->razon_social;
+            $Fcliente->email = $request->email;
+            $Fcliente->telefono = $request->telefono;
+            $Fcliente->total_pagar = $request->total_pagar;
 
-            if($cliente->save()){
+            if($Fcliente->save()){
                 $message = "Cliente registrado con exito";
                 $status = "alert-success";
             }else{
@@ -69,8 +69,8 @@ class ClientesController extends Controller
     public function show($id)
     {
         try {
-            $cliente = Cliente::find($id);
-            if($cliente->delete()){
+            $Fcliente = Cliente::find($id);
+            if($Fcliente->delete()){
                 $message = "Cliente eliminado correctamente!";
                 $status = "alert-success";
             }else{
@@ -79,7 +79,7 @@ class ClientesController extends Controller
             }
 
             // return redirect()->action('UserController@index',['message' => $message]);
-            return redirect('/cliente')->with('status', $status)->with('message', $message);
+            return redirect('/')->with('status', $status)->with('message', $message);
         } catch (Exception $e) {
             return "fatal error - ".$e->getMessage();
         }
@@ -93,8 +93,8 @@ class ClientesController extends Controller
      */
     public function edit($id)
     {
-        $cliente = Cliente::find($id);
-        return view("Form.Clientes.clienteEditar",[ 'cliente'=>$cliente]);
+        $Fcliente = Cliente::find($id);
+        return view("Form.Clientes.clienteEditar",[ 'cliente'=>$Fcliente]);
     }
 
     /**
@@ -107,14 +107,14 @@ class ClientesController extends Controller
     public function update(Request $request, $id)
     {
         try {
-            $cliente = Cliente::find($id);
-            $cliente->identificacion = $request->identificacion;
-            $cliente->razon_social = $request->razon_social;
-            $cliente->email = $request->email;
-            $cliente->telefono = $request->telefono;
-            $cliente->total_pagar = $request->total_pagar;
+            $Fcliente = Cliente::find($id);
+            $Fcliente->identificacion = $request->identificacion;
+            $Fcliente->razon_social = $request->razon_social;
+            $Fcliente->email = $request->email;
+            $Fcliente->telefono = $request->telefono;
+            $Fcliente->total_pagar = $request->total_pagar;
 
-            if($cliente->save()){
+            if($Fcliente->save()){
                 $message = "Datos actualizados correctamente!";
                 $status = "alert-success";
             }else{

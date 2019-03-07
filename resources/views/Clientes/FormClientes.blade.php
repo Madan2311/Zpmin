@@ -23,21 +23,21 @@
 				<td>Eliminar</td>
             </thead>
                 <tbody>
-                @foreach ($cliente as $item)
+                @foreach ($cliente as $Fcliente)
                 <tr>
-                    <td>{{ $item->identificacion }}</td>
-                    <td>{{ $item->razon_social }}</td>
-                    <td>{{ $item->email }}</td>
-                    <td>{{ $item->telefono }}</td>
-                    <td>{{ $item->total_pagar }}</td>
+                    <td>{{ $Fcliente->identificacion }}</td>
+                    <td>{{ $Fcliente->razon_social }}</td>
+                    <td>{{ $Fcliente->email }}</td>
+                    <td>{{ $Fcliente->telefono }}</td>
+                    <td>{{ $Fcliente->total_pagar }}</td>
 
                     <td>
 
-                        <button class="btn btn-warning" data-toggle="modal" data-target="#ModalEditar"><i class="fas fa-user-edit"></i>
-                        </button>
+                        <a href="Fclientes/{{ $Fcliente->id }}/edit" class="btn btn-warning" data-toggle="modal" data-target="#ModalEditar"><i class="fas fa-user-edit"></i>
+                        </a>
                     </td>
                     <td>
-                        <button class="btn btn-danger"><i class="fas fa-times-circle"></i></button>
+                        <a href="Fclientes/{{ $Fcliente->id }}" data-method="DELETE" class="btn btn-danger"><i class="fas fa-times-circle"></i></a>
                     </td>
                 </tr>
                 @endforeach
